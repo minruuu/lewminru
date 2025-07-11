@@ -8,7 +8,7 @@ function Home() {
         <div>
             <header className="app-header">
                 <div className="logo-container">
-                    <a href="#" class="logo">Lew Min Ru</a>
+                    <a href="#" className="logo">Lew Min Ru</a>
                 </div>
                 <nav className="navbar">
                     <a href="#home" className="nav-link">About</a>
