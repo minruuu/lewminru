@@ -36,13 +36,6 @@ function App() {
 export default App
 */
 
-import React from 'react'
-import { Routes, Route, Link }
-  from 'react-router-dom';
-import './App.css'
-import Home from './Home.jsx';
-//import { Container, AppBar, Toolbar, Typography } from '@mui/material';
-
 /*
 function App() {
   return (
@@ -64,6 +57,12 @@ function App() {
   );
 }
 */
+
+import React from 'react'
+import { Routes, Route, Link }
+  from 'react-router-dom';
+import './App.css'
+import Home from './Home.jsx';
 
 function App() {
   return (
