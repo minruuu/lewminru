@@ -46,6 +46,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.section-title {
+    display: flex;
+    justify-content: center;
+}
+
 /* Intro Header */
 .intro-header {
     width: 100%;
