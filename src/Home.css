@@ -8,13 +8,16 @@
 }
 
 body {
-    background-color: #f7f7f2;
+    background-color: #f7f7f2; /*#e6e5e0*/
     margin: 0;
 }
 
 .app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #f7f7f2;
-    padding: 30px 40px;
+    padding: 20px 40px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -38,8 +41,12 @@ body {
     transform: translateY(-5px);
 }
 
+main {
+    padding-top: 100px;
+}
+
 section {
-    padding: 20px 60px;
+    padding: 40px 60px;
 }
 
 html {
@@ -50,6 +57,7 @@ html {
     display: flex;
     justify-content: center;
 }
+
 
 /* Intro Header */
 .intro-header {
@@ -146,8 +154,66 @@ html {
 
 
 /* About Me */
+.about-text {
+    margin: 30px 150px;
+    text-align: center;
+}
 
 
 /* Skills */
 
+
+
 /* Projects */
+.projects-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #494949;
+}
+
+.content img {
+    width: 300px;
+    height: auto;
+}
+
+.card .content {
+    align-items: center;
+    padding: 30px;
+}
+
+.card .content h2 {
+    color: #f7f7f2;
+    font-size: 22px;
+    line-height: 2em;
+}
+
+.card .content p {
+    color: #f7f7f2;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.card .content a {
+    position: relative;
+    display: inline-block;
+    background-color: #f7f7f2;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1e1e24;
+}
