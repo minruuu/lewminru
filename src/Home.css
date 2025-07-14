@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: #f7f7f2; /*#e6e5e0*/
+    background-color: #f7f7f2;
+    /*#e6e5e0*/
     margin: 0;
 }
 
@@ -161,31 +162,73 @@ html {
 
 
 /* Skills */
+.skills-section {
+    margin: 30px 150px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    height: 100%;
+}
+
+.skills-item h5 {
+    color: #f7f7f2;
+    text-align: center;
+}
+
+.skills-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.custom-spotlight-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    width: 125px;
+    height: 125px;
+}
+
 
 
 
 /* Projects */
 .projects-card {
     width: 100%;
-    display: flex;
+    display: inline-block;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     gap: 20px;
 }
 
 .card {
     width: 350px;
-    height: 380px;
-    display: flex;
+    height: 400px;
+    display: inline-block;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     border-radius: 20px;
-    background: #494949;
+
+    background: #f7f7f2;
+    /*#494949*/
 }
 
 .content img {
     width: 300px;
+    border: 0.2px solid;
+    border-radius: 10px;
     height: auto;
 }
 
@@ -195,13 +238,13 @@ html {
 }
 
 .card .content h2 {
-    color: #f7f7f2;
+    color: #1e1e24;
     font-size: 22px;
     line-height: 2em;
 }
 
 .card .content p {
-    color: #f7f7f2;
+    color: #1e1e24;
     font-size: 14px;
     padding-left: 5px;
 }
@@ -209,11 +252,11 @@ html {
 .card .content a {
     position: relative;
     display: inline-block;
-    background-color: #f7f7f2;
+    background-color: #1e1e24;
     font-size: 12px;
     padding: 10px 20px;
     margin-top: 10px;
     border-radius: 10px;
     text-decoration: none;
-    color: #1e1e24;
+    color: #f7f7f2;
 }
