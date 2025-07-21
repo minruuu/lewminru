@@ -200,44 +200,7 @@ function Home() {
 
                         </div>
 
-                        <div className="card">
-                            <div className="content">
-                                <img src={project1} alt="retrofhousing"></img>
-                                <h2>RetroF Housing</h2>
-                                <p>
-                                    RetroF Housing is a business website that
-                                    sells retro-futuristic furniture and home decor
-                                </p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="content">
-                                <img src={project2} alt="retrofhousing"></img>
-                                <h2>Pasta Creation</h2>
-                                <p>
-                                    Pasta Recipe app prototype made using Adobe XD
-                                    lorem ipsum lorem ipsum lorem ipsum
-                                </p>
-                                <a href="#">Read More</a>
-                            </div>
-
-                        </div>
-
-                        <div className="card">
-                            <div className="content">
-                                <img src={project3} alt="retrofhousing"></img>
-                                <h2>eKnitwear</h2>
-                                <p>
-                                    eKnitwear was made with HTML, CSS, and JavaScript / PHP
-                                    lorem ipsum lorem ipsum lorem ipsum
-                                </p>
-                                <a href="#">Read More</a>
-                            </div>
-
-                        </div>
-
+                        
 
 
                     </div>
