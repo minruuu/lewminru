@@ -1,11 +1,12 @@
-import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink, Element } from 'react-scroll';
+import { scroller } from 'react-scroll';
 import './Home.css'
 import { HandWavingIcon, InstagramLogoIcon, LinkedinLogoIcon, GithubLogoIcon } from "@phosphor-icons/react";
-import { FaHtml5, FaCss3Alt, FaPython } from 'react-icons/fa';
+import Navbar from './components/Navbar.jsx';
 import introImage from './images/favicon.png';
-import project1 from './images/retrofhousing_project1.jpg';
+import project1 from './images/retrofhousing/retrofhousing_project1.jpg';
 import project2 from './images/pastacreation_project1.jpg';
 import project3 from './images/eKnitwear_project2.jpg';
 //import TiltedCard from './reactbits/TiltedCard';
@@ -20,22 +21,25 @@ import reactIcon from './icons/react.png';
 import mysqlIcon from './icons/mysql.png';
 import wpIcon from './icons/wordpress-org.png';
 import xdIcon from './icons/xd.png';
+import RetrofHousing from './projects/RetrofHousing.jsx';
 
 function Home() {
+    const location = useLocation();
+
+    useEffect(() => {
+        const scrollTo = location.state?.scrollTo;
+        if (scrollTo) {
+            scroller.scrollTo(scrollTo, {
+                duration: 500,
+                delay: 0,
+                smooth: 'easeInOutQuart',
+            });
+        }
+    }, [location]);
+
     return (
         <div>
-            <header className="app-header">
-                <div className="logo-container">
-                    <a href="#" className="logo">Lew Min Ru</a>
-                </div>
-                <nav className="navbar">
-                    <a href="#" className="nav-link"><ScrollLink to="home" smooth={true} duration={500}>Intro</ScrollLink></a>
-                    <a href="#" className="nav-link"><ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink></a>
-                    <a href="#" className="nav-link"><ScrollLink to="skills" smooth={true} duration={500}>Skills</ScrollLink></a>
-                    <a href="#" className="nav-link"><ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink></a>
-                    <a href="#" className="nav-link"><ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink></a>
-                </nav>
-            </header>
+            <Navbar />
 
             <main>
                 <Element name="home"></Element>
@@ -51,7 +55,7 @@ function Home() {
                         <p>I'm an Information Technology Student & Aspiring Web Developer with hands-on experience in full stack development, UI/UX design, and digital prototyping. I’m passionate about building clean, user-friendly web solutions that solve real problems and make an impact.</p>
                         <div className="intro-btns">
                             <a href="a" className="btn">Contact Info</a>
-                            <a href="/lewminru-resume.pdf" download className="btn">Download Resume</a>
+                            <a href="/lewminru/lewminru-resume.pdf" download className="btn">Download Resume</a>
                         </div>
                     </div>
                     <div className="intro-image">
@@ -165,7 +169,8 @@ function Home() {
                                     RetroF Housing is a business website that
                                     sells retro-futuristic furniture and home decor
                                 </p>
-                                <a href="#">Read More</a>
+                                <Link to="/retrof-housing">Read More</Link>
+
                             </div>
                         </div>
 
@@ -195,7 +200,44 @@ function Home() {
 
                         </div>
 
-                       
+                        <div className="card">
+                            <div className="content">
+                                <img src={project1} alt="retrofhousing"></img>
+                                <h2>RetroF Housing</h2>
+                                <p>
+                                    RetroF Housing is a business website that
+                                    sells retro-futuristic furniture and home decor
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="content">
+                                <img src={project2} alt="retrofhousing"></img>
+                                <h2>Pasta Creation</h2>
+                                <p>
+                                    Pasta Recipe app prototype made using Adobe XD
+                                    lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+
+                        </div>
+
+                        <div className="card">
+                            <div className="content">
+                                <img src={project3} alt="retrofhousing"></img>
+                                <h2>eKnitwear</h2>
+                                <p>
+                                    eKnitwear was made with HTML, CSS, and JavaScript / PHP
+                                    lorem ipsum lorem ipsum lorem ipsum
+                                </p>
+                                <a href="#">Read More</a>
+                            </div>
+
+                        </div>
+
 
 
                     </div>

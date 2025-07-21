@@ -63,19 +63,15 @@ import { Routes, Route, Link }
   from 'react-router-dom';
 import './App.css'
 import Home from './Home.jsx';
+import RetrofHousing from './projects/RetrofHousing.jsx';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/retrofhouse" element={<Tutorials />} />
+      <Route path="/retrof-housing" element={<RetrofHousing />} />
     </Routes>
   );
 }
-
-function Tutorials() {
-  return <h2>Browse Tutorials</h2>;
-}
-
 
 export default App
