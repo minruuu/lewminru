@@ -8,7 +8,7 @@ import Navbar from './components/Navbar.jsx';
 import introImage from './images/favicon.png';
 import project1 from './images/retrofhousing/retrofhousing_project1.jpg';
 import project2 from './images/pastacreation_project1.jpg';
-import project3 from './images/eKnitwear_project2.jpg';
+import project3 from './images/vmrecords/vmrecords_cover.webp';
 //import TiltedCard from './reactbits/TiltedCard';
 import SpotlightCard from './reactbits/SpotlightCard';
 import htmlIcon from './icons/html5.png';
@@ -46,8 +46,8 @@ function Home() {
                 <section id="home" className="intro-header">
                     <div className="socials-icons">
                         <a href="#"><InstagramLogoIcon size={36} weight="bold" /></a>
-                        <a href="#"><LinkedinLogoIcon size={36} weight="bold" /></a>
-                        <a href="#"><GithubLogoIcon size={36} weight="bold" /></a>
+                        <a href="https://www.linkedin.com/in/min-ru-lew/" target='_blank'><LinkedinLogoIcon size={36} weight="bold" /></a>
+                        <a href="https://github.com/minruuu" target='_blank'><GithubLogoIcon size={36} weight="bold" /></a>
                     </div>
                     <div className="intro-text">
                         <h2>Hello I'm Min Ru <HandWavingIcon size={36} padding={5} weight="bold" /></h2>
@@ -189,20 +189,18 @@ function Home() {
 
                         <div className="card">
                             <div className="content">
-                                <img src={project3} alt="retrofhousing"></img>
-                                <h2>eKnitwear</h2>
+                                <img src={project3} alt="vmrecords"></img>
+                                <h2>VMRecords</h2>
                                 <p>
-                                    eKnitwear was made with HTML, CSS, and JavaScript / PHP
-                                    lorem ipsum lorem ipsum
+                                    VMRecords is a Vinyl E-commerce Web App
+                                    made with HTML, CSS, and JavaScript
                                 </p>
-                                <a href="#">Read More</a>
+                                <Link to="/vmrecords">Read More</Link>
                             </div>
 
                         </div>
 
-                        
-
-
+                       
                     </div>
 
 

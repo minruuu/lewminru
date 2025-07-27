@@ -31,8 +31,7 @@ function RetrofHousing() {
                         <h4>Individual Academic Project</h4>
                     </div>
                     <div>
-                        <p>Duration:</p>
-                        <h4>October 2022</h4>
+                        
                     </div>
                 </section>
                 <section className='project-content'>
@@ -91,11 +90,11 @@ function RetrofHousing() {
                             <div>
                                 <h5>Social media platforms:</h5>
                                 <div className='project-socials'>
-                                    <a href="#"><FacebookLogoIcon size={36} color="#0866ff" weight="fill" /></a>
-                                    <a href="#"><TiktokLogoIcon size={36} color="#000000" weight="fill" /></a>
-                                    <a href="#"><PinterestLogoIcon size={36} color="#BD081C" weight="fill" /></a>
-                                    <a href="#"><YoutubeLogoIcon size={36} color="#E62117" weight="fill" /></a>
-                                    <a href="#"><InstagramLogoIcon size={36} color="#d62976" weight="fill" /></a>
+                                    <a href="https://www.facebook.com/retrofhousing/" target='_blank'><FacebookLogoIcon size={36} color="#0866ff" weight="fill" /></a>
+                                    <a href="https://www.tiktok.com/@retrofhousing?lang=en" target='_blank'><TiktokLogoIcon size={36} color="#000000" weight="fill" /></a>
+                                    <a href="https://www.pinterest.com/retrofhousing/retrof-housing/" target='_blank'><PinterestLogoIcon size={36} color="#BD081C" weight="fill" /></a>
+                                    <a href="https://www.youtube.com/@retrofhousing-sz1kc" target='_blank'><YoutubeLogoIcon size={36} color="#E62117" weight="fill" /></a>
+                                    <a href="https://www.instagram.com/retrofhousing/" target='_blank'><InstagramLogoIcon size={36} color="#d62976" weight="fill" /></a>
                                 </div>
                             </div>
                         </div>

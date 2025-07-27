@@ -64,12 +64,14 @@ import { Routes, Route, Link }
 import './App.css'
 import Home from './Home.jsx';
 import RetrofHousing from './projects/RetrofHousing.jsx';
+import VMRecords from './projects/VMRecords.jsx';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/retrof-housing" element={<RetrofHousing />} />
+       <Route path="/vmrecords" element={<VMRecords />} />
     </Routes>
   );
 }
